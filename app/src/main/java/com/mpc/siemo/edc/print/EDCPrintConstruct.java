@@ -3,13 +3,14 @@ package com.mpc.siemo.edc.print;
 import com.imagpay.Settings;
 
 public interface EDCPrintConstruct {
-    interface System{
-        void print(Settings setting);
+    interface Presenter {
+        void print(int type);
     }
 
-    interface Presenter{
-        void onStart();
+    interface View {
+        void onPreparingReceipt(int type, Settings settings);
+        void onPrintStarting();
         void isPrinting();
-        void onFinish(boolean response);
+        void onPrintFinish(boolean response);
     }
 }

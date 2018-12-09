@@ -3,24 +3,20 @@ package com.mpc.siemo.edc;
 import android.content.Context;
 import android.widget.TextView;
 
+import com.imagpay.Settings;
+
 /***
  * @author yovi.putra
  * 09-Dec-2018
  */
 public interface EDCConstruct {
-    interface View{
-        void onLoading(String message);
-        void onHiddenLoading();
-    }
+    void onStart();
 
-    interface Presenter{
-        void onStart();
+    void onStop();
 
-        void onStop();
+    Settings getSetting();
 
-        interface onViewLogging{
-            void setView(TextView view);
-            void onListener(String message);
-        }
+    interface onViewLogging{
+        void setLoggerView(TextView view);
     }
 }
