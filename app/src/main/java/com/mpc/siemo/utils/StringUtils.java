@@ -1,5 +1,9 @@
 package com.mpc.siemo.utils;
 
+/***
+ * @author yovi.putra
+ * 09-Dec-2018
+ */
 public class StringUtils {
     public static String hexToSting(String ver) {
         if (ver == null)

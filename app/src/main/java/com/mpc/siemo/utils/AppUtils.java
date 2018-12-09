@@ -3,6 +3,10 @@ package com.mpc.siemo.utils;
 import android.content.Context;
 import android.content.pm.PackageManager;
 
+/***
+ * @author yovi.putra
+ * 09-Dec-2018
+ */
 public class AppUtils {
     public static String getVerName(Context context) {
         String verName = "";
