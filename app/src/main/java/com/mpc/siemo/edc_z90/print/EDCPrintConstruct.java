@@ -1,4 +1,4 @@
-package com.mpc.siemo.edc.print;
+package com.mpc.siemo.edc_z90.print;
 
 import com.imagpay.Settings;
 

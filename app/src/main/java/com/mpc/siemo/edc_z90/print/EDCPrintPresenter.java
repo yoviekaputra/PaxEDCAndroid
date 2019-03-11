@@ -1,4 +1,4 @@
-package com.mpc.siemo.edc.print;
+package com.mpc.siemo.edc_z90.print;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,8 +7,8 @@ import android.os.Message;
 import android.util.Log;
 
 import com.imagpay.enums.PrintStatus;
-import com.mpc.siemo.edc.EDCBaseService;
-import com.mpc.siemo.edc.EDCConfig;
+import com.mpc.siemo.edc_z90.EDCBaseService;
+import com.mpc.siemo.edc_z90.EDCConfig;
 
 /***
  * @author yovi.putra

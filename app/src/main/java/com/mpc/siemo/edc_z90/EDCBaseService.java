@@ -1,11 +1,7 @@
-package com.mpc.siemo.edc;
+package com.mpc.siemo.edc_z90;
 
-import android.content.Context;
-import android.os.Handler;
 import android.util.Log;
 
-import com.imagpay.MessageHandler;
-import com.imagpay.Settings;
 import com.imagpay.SwipeEvent;
 import com.imagpay.SwipeListener;
 import com.imagpay.emv.EMVListener;
@@ -13,7 +9,6 @@ import com.imagpay.emv.EMVResponse;
 import com.imagpay.enums.CardDetected;
 import com.imagpay.enums.EmvStatus;
 import com.imagpay.enums.PrintStatus;
-import com.imagpay.mpos.MposHandler;
 import com.mpc.siemo.utils.AppUtils;
 import com.mpc.siemo.utils.StringUtils;
 

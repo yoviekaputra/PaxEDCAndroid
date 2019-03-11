@@ -1,6 +1,5 @@
-package com.mpc.siemo.edc;
+package com.mpc.siemo.edc_z90;
 
-import android.content.Context;
 import android.widget.TextView;
 
 import com.imagpay.Settings;

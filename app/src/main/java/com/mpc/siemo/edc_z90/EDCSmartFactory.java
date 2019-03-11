@@ -1,12 +1,12 @@
-package com.mpc.siemo.edc;
+package com.mpc.siemo.edc_z90;
 
 import android.content.Context;
 import android.widget.TextView;
 
 import com.imagpay.MessageHandler;
 import com.imagpay.Settings;
-import com.mpc.siemo.edc.print.EDCPrintPresenter;
-import com.mpc.siemo.edc.print.EDCPrintConstruct;
+import com.mpc.siemo.edc_z90.print.EDCPrintPresenter;
+import com.mpc.siemo.edc_z90.print.EDCPrintConstruct;
 
 /***
  * @author yovi.putra

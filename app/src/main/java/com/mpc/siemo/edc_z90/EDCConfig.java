@@ -1,4 +1,4 @@
-package com.mpc.siemo.edc;
+package com.mpc.siemo.edc_z90;
 
 import android.content.Context;
 import android.os.Handler;
@@ -30,16 +30,34 @@ public class EDCConfig {
                     posHandler.setShowAPDU(true);
                     posSetting = Settings.getInstance(posHandler);
 
-                    posHandler.connect();
-                    posSetting.mPosPowerOn();
+                    try{
+                        posSetting.mPosPowerOn();
+                    }catch(Exception e){
+                        Log.e(TAG,"Electronic to power on failed!");
+                        viewLogger.sendMessage("Electronic to power on failed!");
+                        return;
+                    }
+
+                    try{
+                        posHandler.connect();
+                    }catch(Exception e){
+                        Log.e(TAG,"Connection failed!");
+                        viewLogger.sendMessage("Connection failed!");
+                        return;
+                    }
+
                     Log.i(TAG,"Initialize success...");
+                    viewLogger.sendMessage("Initialize success");
                 }
             },1000);
         }
     }
     public void clear(){
-        this.posHandler.onDestroy();
+        if(posHandler.isConnected()){
+            this.posHandler.onDestroy();
+        }
         this.posSetting.mPosPowerOff();
         this.posSetting.onDestroy();
+        viewLogger.sendMessage("EDCSmart configure is cleared");
     }
 }
